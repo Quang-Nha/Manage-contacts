@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="600.0" vgap="15.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GroupController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" />
+        <ColumnConstraints hgrow="SOMETIMES" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <ListView fx:id="tblGroup" prefWidth="200.0" GridPane.rowIndex="1" GridPane.rowSpan="5" />
+        <Label text="Enter the group name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="groupName" text="Family" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <HBox spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <children>
+                <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#groupAction" text="Add" />
+                <Button fx:id="btnUpdate" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#groupAction" text="Update" />
+                <Button fx:id="btnDelete" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" onAction="#groupAction" text="Delete" />
+            </children>
+        </HBox>
+        <Button fx:id="btnClose" mnemonicParsing="false" onAction="#groupAction" text="Close" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+        <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" GridPane.columnSpan="2">
+            <children>
+                <Label text="Enter the group name" />
+                <TextField fx:id="search" HBox.hgrow="ALWAYS" />
+                <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#groupAction" text="Search" />
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+</GridPane>

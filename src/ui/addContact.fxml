@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="gpAdd" alignment="TOP_CENTER" hgap="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddContactController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label text="Add a new Contact" GridPane.columnSpan="2" />
+        <Label layoutX="10.0" layoutY="16.0" text="First Name" GridPane.rowIndex="1" />
+        <Label layoutX="10.0" layoutY="16.0" text="Last Name" GridPane.rowIndex="3" />
+        <Label layoutX="10.0" layoutY="16.0" text="Phone" GridPane.rowIndex="5" />
+        <Label layoutX="10.0" layoutY="16.0" text="Email" GridPane.rowIndex="7" />
+        <Label layoutX="10.0" layoutY="16.0" text="Birth date" GridPane.rowIndex="9" />
+        <Label layoutX="10.0" layoutY="168.0" text="Group" GridPane.rowIndex="11" />
+        <TextField fx:id="firstName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#check" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="lastName" layoutX="53.0" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#check" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="phone" layoutX="10.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#check" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <TextField fx:id="email" layoutX="10.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#check" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <ComboBox fx:id="cbGroup" layoutX="10.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+        <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#saveContact" text="Add" GridPane.rowIndex="13">
+            <GridPane.margin>
+                <Insets top="10.0" />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="btnClose" mnemonicParsing="false" onAction="#saveContact" text="Close" GridPane.columnIndex="1" GridPane.rowIndex="13">
+            <GridPane.margin>
+                <Insets top="10.0" />
+            </GridPane.margin>
+        </Button>
+        <DatePicker fx:id="dob" prefWidth="300.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="9" />
+      <Label fx:id="lblFirstName" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="lblLastName" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label fx:id="lblPhone" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label fx:id="lblEmail" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <Label fx:id="lblDob" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <Label fx:id="lblReport" layoutX="93.0" layoutY="340.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <Label text="Active" GridPane.rowIndex="12" />
+      <ComboBox fx:id="cbActive" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</GridPane>

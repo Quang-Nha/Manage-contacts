@@ -1,0 +1,3 @@
+John           :Snow           :84687234123    :john@gmail.com           :31-12-1987     :Colleagues2    :true      
+Adam           :Smith          :84880720100    :adam.smithn@gmail.com    :22-07-1990     :Friend         :false     
+Jean           :Tonogbanua     :85231678987    :jean@yahoo.com           :22-01-2000     :Family         :true      
